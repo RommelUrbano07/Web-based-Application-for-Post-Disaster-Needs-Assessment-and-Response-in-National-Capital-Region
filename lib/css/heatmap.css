@@ -1,0 +1,80 @@
+/* FILL START */
+/* DEFAULT COLOR - NO CASE (GREEN) */
+path {
+    transition: 0.375s;
+    fill: #008000;
+    stroke-width: 10;
+    /*stroke: #636363;*/
+    stroke: white;
+}
+path:focus, path:hover {
+    transition: 0.375s;
+    fill: #32cd32;
+}
+
+/* "OK" COLOR - LOW CASE (YELLOW) */
+.manageable {
+    transition: 0.375s;
+    fill: #ffff00;
+}
+.manageable:focus, .manageable:hover {
+    transition: 0.375s;
+    fill: #ffffe0;
+}
+
+/* "MODERATE" COLOR - MODERATE CASE (ORANGE) */
+.moderate {
+    transition: 0.375s;
+    fill: #ff4500;
+}
+.moderate:focus, .moderate:hover {
+    transition: 0.375s;
+    fill: #ffa500;
+}
+
+/* "WORST" COLOR - WORST CASE (RED) */
+.worst {
+    transition: 0.375s;
+    fill: #8b0000;
+}
+.worst:focus, .worst:hover {
+    transition: 0.375s;
+    fill: #ff0000;
+}
+
+/* "DEAD" COLOR - Y'ALL FUCKING DEAD M8 (BLACK) */
+.dead {
+    transition: 0.375s;
+    fill: #000;
+}
+.dead:focus, .dead:hover {
+    transition: 0.375s;
+    fill: #333;
+}
+
+/* FILL END */
+
+.svg-container {
+    padding: 5px;
+    width: 75%;
+}
+
+.svg-tooltip {
+    font-style: Helvetica, Arial;
+    font-size: 12.5px;
+    position: absolute;
+    display: none;
+    content: "";
+}
+
+.svg-tooltip-active {
+    display: inline-block;
+    position: fixed;
+    padding: .25em;
+    background-color: #ccc;
+    border-radius: 25px;
+}
+
+.hidden {
+    display: none;
+}

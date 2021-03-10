@@ -1,0 +1,61 @@
+body,html{
+	background:	#f4f4f4;
+	margin: 0;
+    height: 100%;
+}
+h1{
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 35px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	color:#f4f4f4;
+	font-weight: bold;
+}
+
+
+.main-color-bg{
+  background-color: #56baed !important;
+  border-color: #c0392b !important;
+  color:#ffffff;
+}
+
+
+#header{
+  background:#333333;
+  color:#ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+#header .create{
+  padding-top: 20px;
+}
+
+
+.breadcrumb{
+  background:#cccccc;
+  color:#333333;
+}
+
+.breadcrumb a{
+  color:#333333;
+}
+
+/* Progress Bars */
+.progress-bar{
+  background:#333333;
+  color:#ffffff;
+}
+
+.dash-box{
+  text-align:center;
+}
+
+

@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="../../lib/assets/img/logo.jpg">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>User Sign-up</title>
+
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+
+        <!--     Fonts and icons     -->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+        <!-- CSS Files -->
+        <link href="../../lib/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../../lib/assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+        <!-- CSS Just for demo purpose, don't include it in your project -->
+        <link href="../../lib/assets/css/demo.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!--   Core JS Files   -->
+        <script src="../../lib/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="../../lib/assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../lib/assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+        <!--  Plugin for the Wizard -->
+        <script src="../../lib/assets/js/gsdk-bootstrap-wizard.js"></script>
+
+        <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+        <script src="../../lib/assets/js/jquery.validate.min.js"></script>
+        <div class="image-container set-full-height">
+            <!--   Creative Tim Branding   -->
+
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="../../lib/assets/img/fulllogo.png" width="65" height="70">
+                </div>
+                <div class="brand">
+                </div>
+            </div>
+
+
+            <!--   Big container   -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+
+                        <!--      Wizard container        -->
+                        <div class="wizard-container">
+
+                            <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                                <form action="" method="">
+                                    <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                                    <div class="wizard-header">
+                                        <h3>
+                                            <b>USER SIGN-UP</b><br>
+                                            <small>Create your account. It's quick and easy.</small>
+                                        </h3>
+                                    </div>
+
+                                    <div class="wizard-navigation">
+                                        <ul>
+                                            <li><a href="#about" data-toggle="tab">About</a></li>
+                                            <li><a href="#address" data-toggle="tab">Address</a></li>
+                                            <li><a href="#account" data-toggle="tab">Account</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="about">
+                                            <div class="row">
+                                                <h4 class="info-text"> Let's start with the basic information </h4>
+                                                <div class="col-sm-4 col-sm-offset-1">
+                                                    <div class="picture-container">
+                                                        <div class="picture">
+                                                            <img src="../../lib/assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
+                                                            <input type="file" id="wizard-picture">
+                                                        </div>
+                                                        <h6>Choose Picture</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>First Name <small>(required)</small></label>
+                                                        <input name="firstName" type="text" class="form-control" placeholder="First Name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Middle Name <small>(required)</small></label>
+                                                        <input name="middleName" type="text" class="form-control" placeholder="Middle Name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Last Name <small>(required)</small></label>
+                                                        <input name="lastName" type="text" class="form-control" placeholder="Last Name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Suffix <small></small></label>
+                                                        <input name="suffix" type="text" class="form-control" placeholder="Suffix">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Birth Date <small>(required)</small></label>
+                                                        <input type="date" class="form-control" placeholder="Birth Date" name="birthDate" value="yyyy-mm-dd" class='birthdate' title='Birth Date' required><br>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Contact No. <small>(required)</small></label>
+                                                        <input type="tel" class="form-control" id="phone" name="phone" minlength="7" maxlength="13" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+                                                    </div>
+                                                    <div class="col-sm-10 col-sm-offset-1">     
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="address">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h4 class="info-text"> Where are you located? </h4>
+                                                </div>
+                                                <div class="col-sm-3 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>House No.</label>
+                                                        <input type="text" name="houseNo" class="form-control" placeholder="House No.">
+                                                    </div>	 
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class="form-group">
+                                                        <label>Street Name</label>
+                                                        <input name="streetName" type="text" class="form-control" placeholder="Street Name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>Subdivision</label>
+                                                        <input type="text" name="subdivision" class="form-control" placeholder="Subdivision">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label>Region</label>
+                                                        <select name='region' form='signUpForm' class="form-control" id='region' onchange='updateCity();' required>
+                                                            <option value='ARMM' disabled>ARMM (Autonomous Region in Muslim Mindanao)</option>
+                                                            <option value='CAR' disabled>CAR (Cordillera Administrative Region)</option>
+                                                            <option value='NCR' selected>NCR (National Capital Region)</option>
+                                                            <option value='Region I' disabled>Region I (Ilocos Region)</option>
+                                                            <option value='Region II' disabled>Region II (Cagayan Valley)</option>
+                                                            <option value='Region III' disabled>Region III (Central Luzon)</option>
+                                                            <option value='Region IV-A' disabled>Region IV-A (CALABARZON)</option>
+                                                            <option value='Region IV-B' disabled>Region IV-B (MIMAROPA)</option>
+                                                            <option value='Region V' disabled>Region V (Bicol Region)</option>
+                                                            <option value='Region VI' disabled>Region VI (Western Visayas)</option>
+                                                            <option value='Region VII' disabled>Region VII (Central Visayas)</option>
+                                                            <option value='Region VIII' disabled>Region VIII (Eastern Visayas)</option>
+                                                            <option value='Region IX' disabled>Region IX (Zamboanga Peninsula)</option>
+                                                            <option value='Region X' disabled>Region X (Northern Mindanao)</option>
+                                                            <option value='Region XI' disabled>Region XI (Davao Region)</option>
+                                                            <option value='Region XII' disabled>Region XII (SOCCSKSARGEN)</option>
+                                                            <option value='Region XIII' disabled>Region XIII (Caraga Region)</option>
+                                                        </select><br>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 col-sm-offset-1">
+                                                    <div class="form-group">
+                                                        <label>City</label><br>
+                                                        <div id='city' required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label>Barangay</label><br>
+                                                        <div id='barangay' required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="account">
+                                            <h4 class="info-text"> Setting up your account </h4>
+                                            <div class="row">
+
+                                                <div class="col-sm-10 col-sm-offset-1">
+                                                    <div class="col-sm-4">
+
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>Username <small>(required)</small></label>
+                                                            <input name="Username" type="text" class="form-control" placeholder="Username" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Password <small>(required)</small></label>
+                                                            <input name="Password" type="text" class="form-control" placeholder="Password" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-footer height-wizard">
+                                        <div class="pull-right">
+                                            <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
+                                            <input type='submit' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='submit' value='Submit' />
+                                            
+
+                                        </div>
+
+                                        <div class="pull-left">
+                                            <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div> <!-- wizard container -->
+                    </div>
+                </div><!-- end row -->
+            </div> <!--  big container -->
+
+            <div class="footer">
+                <div class="container">
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            // Sets the maximum date allowed.
+            $(document).ready(function() {
+            updateMaxDate();
+            updateCity();
+            updateBarangay();
+            });
+            // CUSTOM METHODS
+            function updateMaxDate() {
+            var now = new Date();
+            var month = (now.getMonth() + 1);
+            var day = now.getDate();
+            if (month < 10)
+                    month = "0" + month;
+            if (day < 10)
+                    day = "0" + day;
+            var date = (now.getFullYear() - 18) + '-' + month + '-' + day;
+            $('#birthDate').attr({ "max": date });
+            }
+
+            // UPDATE CITY
+            let oldCity, updateCityFirst = true;
+            function updateCity() {
+            let city, value = $("#region").children("option:selected").val().replace(/\s/g, "_"),
+                    str = "<select name='city' form='signUpForm' class='form-control' id='" + value + "' onchange='updateBarangay();' required>", arr;
+            if (updateCityFirst)
+                    updateCityFirst = false;
+            else
+                    oldCity.remove();
+            switch (value) {
+            case "NCR":
+                    arr = ["Caloocan", "Las Piñas", "Makati", "Malabon", "Mandaluyong", "Manila City", "Marikina", "Muntinlupa", "Navotas", "Parañaque", "Pasay City", "Pasig City", "Pateros", "Quezon City", "San Juan", "Taguig", "Valenzuela"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>" + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>" + arr[i] + "</option>";
+            }
+            break;
+            }
+            str += "</select>";
+            city = $(str);
+            $("#city").append(city);
+            oldCity = $("#" + value);
+            }
+            let oldBarangay, updateBarangayFirst = true;
+            function updateBarangay() {
+            let barangay, value = $("#city").children("select").children("option:selected").val().replace(/\s/g, "_"),
+                    str = "<select name='barangay' form='signUpForm' class='form-control' id='" + value + "' required>", arr;
+            if (updateBarangayFirst)
+                    updateBarangayFirst = false;
+            else
+                    oldBarangay.remove();
+            switch (value) {
+            case "Caloocan":
+                    for (let i = 1; i < 189; i++) {
+            if (i == 1)
+                    str += "<option value='Barangay_" + i + "' selected>Barangay " + i + "</option>";
+            else
+                    str += "<option value='Barangay_" + i + "'>Barangay " + i + "</option>";
+            }
+            break;
+            case "Las_Piñas":
+                    arr = ["Almanza Dos", "Almanza Uno", "B. F. International Village", "Daniel Fajardo", "Elias Aldana", "Ilaya", "Manuyo Dos", "Manuyo Uno", "Pamplona Dos", "Pamplona Tres", "Pamplona Uno", "Pilar", "Pulang Lupa Dos", "Pulang Lupa Uno", "Talon Dos", "Talon Kuatro", "Talong Singko", "Talon Tres", "Talon Uno", "Zapote"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Makati":
+                    arr = ["Bangkal", "Bel-Air", "Carmona", "Cembo", "Comembo", "Dasmariñas, East Rembo", "Forbes Park", "Guadalupe Nuevo", "Guadalupe Viejo", "Kasilawan", "La Paz", "Magallanes", "Olympia", "Palanan", "Pembo", "Pinagkaisahan", "Pio Del Pilar", "Pitogo", "Poblacion", "Post Proper Northside", "Post Proper Southside", "Rizal", "San Antonio", "San Isidro", "San Lorenzo", "Santa Cruz", "Signkamas", "South Cembo", "Tejeros", "Urdaneta", "Valenzuela", "West Rembo"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Malabon":
+                    arr = ["Acacia", "Baritan", "Bayan-Bayanan", "Catmon", "Concepcion", "Dampalit", "Flores", "Hulong Duhat", "Ibaba", "Longos", "Maysilo", "Muzon", "Niugan", "Panghulo", "Potrero", "San Agustin", "Santolan", "Tañong", "Tinajeros", "Tonsuya", "Tugatog"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Mandaluyong":
+                    arr = ["Addition Hills", "Bagong Silang", "Barangka Drive", "Barangka Ibaba", "Barangka Ilaya", "Barangka Itaas", "Buayang Bato", "Burol", "Daang Bakal", "Hagdang Bato Itaas", "Hagdang Bato Libis", "Harapin Ang Bukas", "Highway Hills", "Hulo", "Mabini-J. Rizal", "Malamig", "Mauway", "Namayan", "New Zañiga", "Old Zañiga", "Pag-asa", "Plainview", "Pleasant Hills", "Poblacion", "San Jose", "Vergara", "Wack-Wack Greenhills"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Manila_City":
+                    for (let i = 1; i < 906; i++) {
+            if (i == 1)
+                    str += "<option value='Barangay_" + i + "' selected>Barangay " + i + "</option>";
+            else {
+            if ((i >= 21 && i <= 24) || (i == 27) || (i == 40) || (i >= 113 && i <= 115) || (i >= 277 && i <= 280) || (i == 665) || (i == 854))
+                    continue;
+            if (i == 659 || i == 660 || i == 663 || i == 664 || i == 587 || i == 818 || i == 202)
+                    str += "<option value='Barangay_" + i + "'>Barangay " + i + "-A</option>";
+            str += "<option value='Barangay_" + i + "'>Barangay " + i + "</option>";
+            }
+            }
+            break;
+            case "Marikina":
+                    arr = ["Barangka", "Calumpang", "Concepcion Dos", "Concepcion Uno", "Fortune", "Industrial Valley", "Jesus De La Peña", "Malanday", "Marikina Heights", "Nangka", "Parang", "San Roque", "Santa Elena", "Santo Niño", "Tañong", "Tumana"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Muntinlupa":
+                    arr = ["Alabang", "Bayanan", "Buli", "Cupang", "New Alabang Village", "Poblacion", "Putatan", "Sucat", "Tunasan"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Navotas":
+                    arr = ["Bagumbayan North", "Bagumbayan South", "Bangculasi", "Daanghari", "Navotas East", "Navotas West", "North Bay Blvd. North", "North Bay Blvd. South", "San Jose", "San Rafael Village", "San Roque", "Sipac-Almacen", "Tangos", "Tanza"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Parañaque":
+                    arr = ["Baclaran", "B. F. Homes", "Don Bosco", "Don Galo", "La Huerta", "Marcelo Green Village", "Merville", "Moonwalk", "San Antonio", "San Dionisio", "San Isidro", "San Martin De Porres", "Santo Niño", "Sun Valley", "Tambo", "Vitalez"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Pasay_City":
+                    for (let i = 1; i < 202; i++) {
+            if (i == 1)
+                    str += "<option value='" + i + "' selected>Barangay " + i + "</option>";
+            else
+                    str += "<option value='" + i + "'>Barangay " + i + "</option>";
+            }
+            break;
+            case "Pasig_City":
+                    arr = ["Bagong Ilog", "Bagong Katipunan", "Bambang", "Buting", "Caniogan", "Dela Paz", "Kalawaan", "Kapasigan", "Kapitolyo", "Malinao", "Manggahan", "Maybunga", "Oranbo", "Palatiw", "Pinagbuhatan", "Pineda", "Rosario", "Sagad", "San Antonio", "San Joaquin", "San Jose", "San Miguel", "San Nicolas", "Santa Cruz", "Santa Lucia", "Santa Rosa", "Santolan", "Santo Tomas", "Sumilang", "Ugong"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Pateros":
+                    arr = ["Aguho", "Magtanggol", "Martires del 96", "Poblacion", "San Pedro", "San Roque", "Santa Ana", "Santo Rosario East", "Santo Rosario West", "Tabacalera"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Quezon_City":
+                    arr = ["Alicia", "Amihan", "Apolonio Samson", "Aurora", "Baesa", "Bagbag", "Bagong Lipunan Ng Crame", "Bagong Pag-asa", "Bagong Silang", "Bagumbayan", "Bahay Toro", "Balingasa", "Balong Bato", "Batasan Hills", "Bayanihan", "Blue Ridge A", "Blue Ridge B", "Botocan", "Bungad", "Camp Aguinaldo", "Capri", "Central", "Claro", "Commonwealth", "Culiat", "Damar", "Damayan", "Damayang Lagi", "Del Monte", "Dioquino Zobel", "Doña Imelda", "Doña Josefa", "Don Manuel", "Duyan-Duyan", "East Kamias", "E. Rodriguez", "Escopa I", "Escopa II", "Escopa III", "Escopa IV", "Fairview", "Greater Lagro", "Gulod", "Holly Spirit", "Horseshoe", "Immaculate Concepcion", "Kaligayahan", "Kalusugan", "Kamuning", "Katipunan", "Kaunlaran", "Kristong Hari", "Krus Na Ligas", "Laging Handa", "Libis", "Lourdes", "Loyola Heights", "Maharlika", "Malaya", "Mangga", "Manresa", "Mariana", "Mariblo", "Marilag", "Masagana", "Masambong", "Matandang Balara", "Milagrosa", "Nagkaisang Nayon", "Nayong Kanluran", "New Era", "North Fairview", "Novaliches Proper", "N.S. Amoranto", "Obrero", "Old Capitol Site", "Paang Bundok", "Pag-ibig sa Nayon", "Paligsahan", "Paltok", "Pansol", "Paraiso", "Pasong Putik Proper", "Pasong Tamo", "Payatas", "Phil-Am", "Pinagkaisahan", "Pinyahan", "Project 6", "Quirino 2-A", "Quirino 2-B", "Quirino 2-C", "Quirino 3-A", "Ramon Magsaysay", "Roxas", "Sacred Heart", "Saint Ignatius", "Saint Peter", "Salvacion", "San Augustin", "San Antonio", "San Bartolome", "Sangandaan", "San Isidro", "San Isidro Labrador", "San Jose", "San Martin De Porres", "San Roque", "Santa Cruz", "Santa Lucia", "Santa Monica", "Santa Teresita", "Santo Cristo", "Santo Domingo", "Santol", "Santo Niño", "San Vicente", "Sauyo", "Sienna", "Sikatuna Village", "Silangan", "Socorro", "South Triangle", "Tagumpay", "Talayan", "Talipapa", "Tandang Sora", "Tatalon", "Teacehrs Village East", "Teachers Village West", "Ugong Norte", "Unang Sigaw", "U.P. Campus", "U.P. Village", "Valencia", "Vasra", "Veterans Village", "Villa Maria Clara", "West Kamias", "West Triangle", "White Plains"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "San_Juan":
+                    arr = ["Addition Hills", "Balong-Bato", "Batis", "Corazon de Jesus", "Ermitaño", "Greenhills", "Halo-halo", 'Isabelita', "Kabayanan", "Little Baguio", "Maytunas", "Onse", "Pasadeña", "Pedro Cruz", "Progreso", "Rivera", "Salapan", "San Perfecto", "Santa Lucia", "Tibagan", "West Crame"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Taguig":
+                    arr = ["Bagumbayan", "Bambang", "Calzada", "Central Bicutan", "Cewntral Signal Village", "Fort Bonifacio", "Hagonoy", "Ibayo-Tipas", "Katuparan", "Ligid-Tipas", "Lower Bicutan", "Maharlika Village", "Napindan", "New Lower Bicutan", "North Daang Hari", "North Signal Village", "Palingon", "Pinagsama", "San Miguel", "Santa Ana", "South Daang Hari", "South Signal Village", "Tanyag", "Tuktukan", "Upper Bicutan", "Ususan", "Wawa", "Western Bicutan"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            case "Valenzuela":
+                    arr = ["Arkong Bato", "Bagbaguin", "Balangkas", "Bignay", "Bisig", "Canumay East", "Canumay West", "Coloong", "Dalandanan", "Hen. T. De Leon", "Isla", "Karuhatan", "Lawang Bato", "Lingunan", "Mabolo", "Malandsay", "Malinta", "Mapulang Lupa", "Marulas", "Maysan", "Palasan", "Parada", "Pariancillo Villa", "Paso De Blas", "Pasolo", "Poblacion", "Pulo", "Punturin", "Rincon", "Tagalag", "Ugong", "Viente Reales", "Wawang Pulo"];
+            for (let i = 0; i < arr.length; i++) {
+            if (i == 0)
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "' selected>Barangay " + arr[i] + "</option>";
+            else
+                    str += "<option value='" + arr[i].replace(/\s/g, "_") + "'>Barangay " + arr[i] + "</option>";
+            }
+            break;
+            }
+            str += "</select>";
+            barangay = $(str);
+            $("#barangay").append(barangay);
+            oldBarangay = $("#" + value);
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,157 @@
+body, html{
+	height: 100%;
+	font-family: sans-serif;
+}
+.container-login100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container-login100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgb(255,204,204) 0%, rgb(153,0,0) 50%, rgb(51,0,0)100%);
+  pointer-events: none;
+}
+
+
+
+.login-box{
+	width: 320px;
+	height: 420px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.image{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;	
+	left: calc(35%);
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+.login-box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+
+}
+.login-box input{
+	width: 100%;
+	margin-bottom: 20px;
+	
+}
+.login-box input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	  
+}
+.login-box input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #e33238;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.login-box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #524fe3;
+	color: #000;
+}
+
+
+
+.register-form{
+	text-align: center;
+	width: 400px;
+	height: 550px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.register-form input{
+	width: 245px;
+	padding: 10px;
+	border-radius: 5px;
+}
+#rd{
+	width: 50px;
+	text-align: center;
+	margin-left: -3px;
+}
+#but{
+	color: white;
+	margin-left: -3px;
+}
+.register-form input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #e33238;
+	font-size: 18px;
+}
+.register-form input[type="submit"]:hover{
+	cursor: pointer;
+	background: #524fe3;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="256.000000pt" height="500.000000pt" viewBox="0 0 256.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+	<path id='Mandaluyong' transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="#636363" stroke-width="5"
+	d="M1557 2850 c-25 -23 -67 -48 -92 -57 -46 -15 -47 -15 -74 11 -27 26 -71 35 -71 15 0 -6 -13 -27 -30 -46 -16 -18 -30 -39 -30 -46 0 -7 -9 -23 -20
+	-37 -11 -14 -20 -30 -20 -36 0 -11 75 -64 90 -64 5 0 15 -9 23 -20 7 -11 33 -34 56 -51 38 -27 46 -29 73 -20 17 6 56 11 86 11 50 0 58 3 88 36 19 19 34
+	43 34 52 0 9 10 36 22 59 20 38 21 46 10 90 -9 34 -9 58 -2 83 17 58 15 60 -44 60 -48 0 -58 -4 -99 -40z"/>
+</svg>

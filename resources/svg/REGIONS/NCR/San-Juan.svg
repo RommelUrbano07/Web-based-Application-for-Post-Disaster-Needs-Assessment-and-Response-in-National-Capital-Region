@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="256.000000pt" height="500.000000pt" viewBox="0 0 256.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+	<path id='San-Juan' transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#a9a9a9" stroke="#636363" stroke-width="5"
+	d="M1290 3025 c0 -9 -9 -33 -20 -55 -26 -51 -25 -69 4 -80 13 -5 30 -22 37 -39 8 -17 20 -31 28 -31 8 0 29 -12 48 -26 33 -25 35 -25 78 -10 25 8 67
+	33 93 55 41 35 55 41 95 41 42 0 47 2 47 23 0 13 -6 31 -13 41 -12 16 -17 17 -37 6 -15 -8 -25 -9 -27 -3 -2 6 -9 17 -16 26 -15 20 -99 26 -121 8 -12 -10
+	-22 -8 -55 13 -22 14 -54 26 -70 26 -16 0 -33 5 -36 10 -10 16 -35 12 -35 -5z"/>
+</svg>
